@@ -1,0 +1,57 @@
+<h2>Student Details</h2> 
+
+<hr/>
+
+<div *ngIf="student">
+  <div>
+    <label><b>Student ID: </b></label> {{student.id}}
+  </div>
+  <div>
+    <label><b>Student Name: </b></label> {{student.student_name}}
+  </div>
+  <div>
+    <label><b>Addmission No: </b></label> {{student.admission_no}}
+  </div>  
+  <div>
+    <label><b>Ledger No: </b></label> {{student.ladgerNo}}
+  </div>
+  <div>
+    <label><b>Date Of Addmission: </b></label> {{student.dateOfAdmission}}
+  </div>
+  <div>
+    <label><b>Sex: </b></label> {{student.sex}}
+  </div>  
+  <div>
+    <label><b>Class: </b></label> {{student.student_class}}
+  </div>  
+  <div>
+    <label><b>Date Of Birth: </b></label> {{student.date_of_birth}}
+  </div>
+  <div>
+    <label><b>Father Name: </b></label> {{student.stdAddInfo.fatherName}}
+  </div>
+  <div>
+    <label><b>Mother Name: </b></label> {{student.stdAddInfo.motherName}}
+  </div>  
+  <div>
+    <label><b>Village: </b></label> {{student.stdAddInfo.village}}
+  </div>  
+  <div>
+    <label><b>Category: </b></label> {{student.stdAddInfo.catagory}}
+  </div>  
+  <div>
+    <label><b>Caste: </b></label> {{student.stdAddInfo.caste}}
+  </div>  
+  <div>
+    <label><b>Aadhar No: </b></label> {{student.stdAddInfo.aadharNo}}
+  </div>  
+  <div>
+    <label><b>Contact No: </b></label> {{student.stdAddInfo.contNo}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Student List</button><br>
+
+

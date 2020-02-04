@@ -1,0 +1,36 @@
+<header>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #135f19!important; " >
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLink="students" class="nav-link" routerLinkActive="active">Student List</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">New Addmission</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="add" class="nav-link" routerLinkActive="active">Demand Note</a>
+  </li>
+  </ul>
+</nav>
+
+</header>
+
+
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet> </router-outlet>
+    </div>
+  </div>
+</div> 
+
+
+
+<footer class="footer" style="    position: inherit; background-color: #135f19!important;">  
+      <span>All Rights Reserved 2019 @JavaGuides</span>  
+</footer>
+
